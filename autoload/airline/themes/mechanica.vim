@@ -1,14 +1,14 @@
 " -----------------------------------------------------------------------------
-" File: gruvbox.vim
+" File: mechanica.vim
 " Description: Retro groove color scheme for Airline
-" Author: morhetz <morhetz@gmail.com>
-" Source: https://github.com/morhetz/gruvbox
-" Last Modified: 12 Aug 2017
+" Author: alexpro <aleksandar.prokopec@gmail.com>
+" Source: https://github.com/axel22/mechanica
+" Last Modified: 20 Feb 2020
 " -----------------------------------------------------------------------------
 
-let g:airline#themes#gruvbox#palette = {}
+let g:airline#themes#mechanica#palette = {}
 
-function! airline#themes#gruvbox#refresh()
+function! airline#themes#mechanica#refresh()
 
   let M0 = airline#themes#get_highlight('Identifier')
   let accents_group = airline#themes#get_highlight('Special')
@@ -19,51 +19,51 @@ function! airline#themes#gruvbox#refresh()
   let s:N1 = airline#themes#get_highlight2(['Normal', 'bg'], ['StatusLineNC', 'bg'])
   let s:N2 = airline#themes#get_highlight2(['StatusLineNC', 'bg'], ['Pmenu', 'bg'])
   let s:N3 = airline#themes#get_highlight2(['StatusLineNC', 'bg'], ['CursorLine', 'bg'])
-  let g:airline#themes#gruvbox#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
-  let g:airline#themes#gruvbox#palette.normal_modified = { 'airline_c': modified_group }
-  let g:airline#themes#gruvbox#palette.normal.airline_warning = warning_group
-  let g:airline#themes#gruvbox#palette.normal_modified.airline_warning = warning_group
-  let g:airline#themes#gruvbox#palette.normal.airline_error = error_group
-  let g:airline#themes#gruvbox#palette.normal_modified.airline_error = error_group
+  let g:airline#themes#mechanica#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+  let g:airline#themes#mechanica#palette.normal_modified = { 'airline_c': modified_group }
+  let g:airline#themes#mechanica#palette.normal.airline_warning = warning_group
+  let g:airline#themes#mechanica#palette.normal_modified.airline_warning = warning_group
+  let g:airline#themes#mechanica#palette.normal.airline_error = error_group
+  let g:airline#themes#mechanica#palette.normal_modified.airline_error = error_group
 
   let s:I1 = airline#themes#get_highlight2(['Normal', 'bg'], ['Identifier', 'fg'])
   let s:I2 = s:N2
   let s:I3 = airline#themes#get_highlight2(['Normal', 'fg'], ['Pmenu', 'bg'])
-  let g:airline#themes#gruvbox#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
-  let g:airline#themes#gruvbox#palette.insert_modified = g:airline#themes#gruvbox#palette.normal_modified
-  let g:airline#themes#gruvbox#palette.insert.airline_warning = g:airline#themes#gruvbox#palette.normal.airline_warning
-  let g:airline#themes#gruvbox#palette.insert_modified.airline_warning = g:airline#themes#gruvbox#palette.normal_modified.airline_warning
-  let g:airline#themes#gruvbox#palette.insert.airline_error = g:airline#themes#gruvbox#palette.normal.airline_error
-  let g:airline#themes#gruvbox#palette.insert_modified.airline_error = g:airline#themes#gruvbox#palette.normal_modified.airline_error
+  let g:airline#themes#mechanica#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+  let g:airline#themes#mechanica#palette.insert_modified = g:airline#themes#mechanica#palette.normal_modified
+  let g:airline#themes#mechanica#palette.insert.airline_warning = g:airline#themes#mechanica#palette.normal.airline_warning
+  let g:airline#themes#mechanica#palette.insert_modified.airline_warning = g:airline#themes#mechanica#palette.normal_modified.airline_warning
+  let g:airline#themes#mechanica#palette.insert.airline_error = g:airline#themes#mechanica#palette.normal.airline_error
+  let g:airline#themes#mechanica#palette.insert_modified.airline_error = g:airline#themes#mechanica#palette.normal_modified.airline_error
 
   let s:R1 = airline#themes#get_highlight2(['Normal', 'bg'], ['Structure', 'fg'])
   let s:R2 = s:I2
   let s:R3 = s:I3
-  let g:airline#themes#gruvbox#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
-  let g:airline#themes#gruvbox#palette.replace_modified = g:airline#themes#gruvbox#palette.normal_modified
-  let g:airline#themes#gruvbox#palette.replace.airline_warning = g:airline#themes#gruvbox#palette.normal.airline_warning
-  let g:airline#themes#gruvbox#palette.replace_modified.airline_warning = g:airline#themes#gruvbox#palette.normal_modified.airline_warning
-  let g:airline#themes#gruvbox#palette.replace.airline_error = g:airline#themes#gruvbox#palette.normal.airline_error
-  let g:airline#themes#gruvbox#palette.replace_modified.airline_error = g:airline#themes#gruvbox#palette.normal_modified.airline_error
+  let g:airline#themes#mechanica#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+  let g:airline#themes#mechanica#palette.replace_modified = g:airline#themes#mechanica#palette.normal_modified
+  let g:airline#themes#mechanica#palette.replace.airline_warning = g:airline#themes#mechanica#palette.normal.airline_warning
+  let g:airline#themes#mechanica#palette.replace_modified.airline_warning = g:airline#themes#mechanica#palette.normal_modified.airline_warning
+  let g:airline#themes#mechanica#palette.replace.airline_error = g:airline#themes#mechanica#palette.normal.airline_error
+  let g:airline#themes#mechanica#palette.replace_modified.airline_error = g:airline#themes#mechanica#palette.normal_modified.airline_error
 
   let s:V1 = airline#themes#get_highlight2(['Normal', 'bg'], ['Question', 'fg'])
   let s:V2 = s:N2
   let s:V3 = airline#themes#get_highlight2(['Normal', 'bg'], ['TabLine', 'fg'])
-  let g:airline#themes#gruvbox#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
-  let g:airline#themes#gruvbox#palette.visual_modified = { 'airline_c': [ s:V3[0], '', s:V3[2], '', '' ] }
-  let g:airline#themes#gruvbox#palette.visual.airline_warning = g:airline#themes#gruvbox#palette.normal.airline_warning
-  let g:airline#themes#gruvbox#palette.visual_modified.airline_warning = g:airline#themes#gruvbox#palette.normal_modified.airline_warning
-  let g:airline#themes#gruvbox#palette.visual.airline_error = g:airline#themes#gruvbox#palette.normal.airline_error
-  let g:airline#themes#gruvbox#palette.visual_modified.airline_error = g:airline#themes#gruvbox#palette.normal_modified.airline_error
+  let g:airline#themes#mechanica#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+  let g:airline#themes#mechanica#palette.visual_modified = { 'airline_c': [ s:V3[0], '', s:V3[2], '', '' ] }
+  let g:airline#themes#mechanica#palette.visual.airline_warning = g:airline#themes#mechanica#palette.normal.airline_warning
+  let g:airline#themes#mechanica#palette.visual_modified.airline_warning = g:airline#themes#mechanica#palette.normal_modified.airline_warning
+  let g:airline#themes#mechanica#palette.visual.airline_error = g:airline#themes#mechanica#palette.normal.airline_error
+  let g:airline#themes#mechanica#palette.visual_modified.airline_error = g:airline#themes#mechanica#palette.normal_modified.airline_error
 
   let s:IA = airline#themes#get_highlight2(['TabLine', 'fg'], ['CursorLine', 'bg'])
-  let g:airline#themes#gruvbox#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
-  let g:airline#themes#gruvbox#palette.inactive_modified = { 'airline_c': modified_group }
+  let g:airline#themes#mechanica#palette.inactive = airline#themes#generate_color_map(s:IA, s:IA, s:IA)
+  let g:airline#themes#mechanica#palette.inactive_modified = { 'airline_c': modified_group }
 
-  let g:airline#themes#gruvbox#palette.accents = { 'red': accents_group }
+  let g:airline#themes#mechanica#palette.accents = { 'red': accents_group }
 
   let s:TF = airline#themes#get_highlight2(['Normal', 'bg'], ['Normal', 'bg'])
-  let g:airline#themes#gruvbox#palette.tabline = {
+  let g:airline#themes#mechanica#palette.tabline = {
     \ 'airline_tab':  s:N2,
     \ 'airline_tabsel':  s:N1,
     \ 'airline_tabtype':  s:V1,
@@ -74,6 +74,6 @@ function! airline#themes#gruvbox#refresh()
 
 endfunction
 
-call airline#themes#gruvbox#refresh()
+call airline#themes#mechanica#refresh()
 
 " vim: set sw=2 ts=2 sts=2 et tw=80 ft=vim fdm=marker:

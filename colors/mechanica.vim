@@ -1,9 +1,9 @@
 " -----------------------------------------------------------------------------
-" File: gruvbox.vim
-" Description: Retro groove color scheme for Vim
-" Author: morhetz <morhetz@gmail.com>
-" Source: https://github.com/morhetz/gruvbox
-" Last Modified: 12 Aug 2017
+" File: mechanica.vim
+" Description: Hi-tech mechanical color scheme for Vim
+" Author: alexpro <aleksandar.prokopec@gmail.com>
+" Source: https://github.com/axel22/mechanica
+" Last Modified: 20 Feb 2020
 " -----------------------------------------------------------------------------
 
 " Supporting code -------------------------------------------------------------
@@ -16,7 +16,7 @@ if version > 580
   endif
 endif
 
-let g:colors_name='gruvbox'
+let g:colors_name='mechanica'
 
 if !(has('termguicolors') && &termguicolors) && !has('gui_running') && &t_Co != 256
   finish
@@ -25,56 +25,56 @@ endif
 " }}}
 " Global Settings: {{{
 
-if !exists('g:gruvbox_bold')
-  let g:gruvbox_bold=1
+if !exists('g:mechanica_bold')
+  let g:mechanica_bold=1
 endif
-if !exists('g:gruvbox_italic')
+if !exists('g:mechanica_italic')
   if has('gui_running') || $TERM_ITALICS == 'true'
-    let g:gruvbox_italic=1
+    let g:mechanica_italic=1
   else
-    let g:gruvbox_italic=0
+    let g:mechanica_italic=0
   endif
 endif
-if !exists('g:gruvbox_undercurl')
-  let g:gruvbox_undercurl=1
+if !exists('g:mechanica_undercurl')
+  let g:mechanica_undercurl=1
 endif
-if !exists('g:gruvbox_underline')
-  let g:gruvbox_underline=1
+if !exists('g:mechanica_underline')
+  let g:mechanica_underline=1
 endif
-if !exists('g:gruvbox_inverse')
-  let g:gruvbox_inverse=1
-endif
-
-if !exists('g:gruvbox_guisp_fallback') || index(['fg', 'bg'], g:gruvbox_guisp_fallback) == -1
-  let g:gruvbox_guisp_fallback='NONE'
+if !exists('g:mechanica_inverse')
+  let g:mechanica_inverse=1
 endif
 
-if !exists('g:gruvbox_improved_strings')
-  let g:gruvbox_improved_strings=0
+if !exists('g:mechanica_guisp_fallback') || index(['fg', 'bg'], g:mechanica_guisp_fallback) == -1
+  let g:mechanica_guisp_fallback='NONE'
 endif
 
-if !exists('g:gruvbox_improved_warnings')
-  let g:gruvbox_improved_warnings=0
+if !exists('g:mechanica_improved_strings')
+  let g:mechanica_improved_strings=0
 endif
 
-if !exists('g:gruvbox_termcolors')
-  let g:gruvbox_termcolors=256
+if !exists('g:mechanica_improved_warnings')
+  let g:mechanica_improved_warnings=0
 endif
 
-if !exists('g:gruvbox_invert_indent_guides')
-  let g:gruvbox_invert_indent_guides=0
+if !exists('g:mechanica_termcolors')
+  let g:mechanica_termcolors=256
 endif
 
-if exists('g:gruvbox_contrast')
-  echo 'g:gruvbox_contrast is deprecated; use g:gruvbox_contrast_light and g:gruvbox_contrast_dark instead'
+if !exists('g:mechanica_invert_indent_guides')
+  let g:mechanica_invert_indent_guides=0
 endif
 
-if !exists('g:gruvbox_contrast_dark')
-  let g:gruvbox_contrast_dark='medium'
+if exists('g:mechanica_contrast')
+  echo 'g:mechanica_contrast is deprecated; use g:mechanica_contrast_light and g:mechanica_contrast_dark instead'
 endif
 
-if !exists('g:gruvbox_contrast_light')
-  let g:gruvbox_contrast_light='medium'
+if !exists('g:mechanica_contrast_dark')
+  let g:mechanica_contrast_dark='medium'
+endif
+
+if !exists('g:mechanica_contrast_light')
+  let g:mechanica_contrast_light='medium'
 endif
 
 let s:is_dark=(&background == 'dark')
@@ -135,27 +135,27 @@ let s:gb.faded_orange   = ['#af3a03', 130]     " 175-58-3
 " Setup Emphasis: {{{
 
 let s:bold = 'bold,'
-if g:gruvbox_bold == 0
+if g:mechanica_bold == 0
   let s:bold = ''
 endif
 
 let s:italic = 'italic,'
-if g:gruvbox_italic == 0
+if g:mechanica_italic == 0
   let s:italic = ''
 endif
 
 let s:underline = 'underline,'
-if g:gruvbox_underline == 0
+if g:mechanica_underline == 0
   let s:underline = ''
 endif
 
 let s:undercurl = 'undercurl,'
-if g:gruvbox_undercurl == 0
+if g:mechanica_undercurl == 0
   let s:undercurl = ''
 endif
 
 let s:inverse = 'inverse,'
-if g:gruvbox_inverse == 0
+if g:mechanica_inverse == 0
   let s:inverse = ''
 endif
 
@@ -169,9 +169,9 @@ let s:none = ['NONE', 'NONE']
 " determine relative colors
 if s:is_dark
   let s:bg0  = s:gb.dark0
-  if g:gruvbox_contrast_dark == 'soft'
+  if g:mechanica_contrast_dark == 'soft'
     let s:bg0  = s:gb.dark0_soft
-  elseif g:gruvbox_contrast_dark == 'hard'
+  elseif g:mechanica_contrast_dark == 'hard'
     let s:bg0  = s:gb.dark0_hard
   endif
 
@@ -199,9 +199,9 @@ if s:is_dark
   let s:orange = s:gb.bright_orange
 else
   let s:bg0  = s:gb.light0
-  if g:gruvbox_contrast_light == 'soft'
+  if g:mechanica_contrast_light == 'soft'
     let s:bg0  = s:gb.light0_soft
-  elseif g:gruvbox_contrast_light == 'hard'
+  elseif g:mechanica_contrast_light == 'hard'
     let s:bg0  = s:gb.light0_hard
   endif
 
@@ -230,7 +230,7 @@ else
 endif
 
 " reset to 16 colors fallback
-if g:gruvbox_termcolors == 16
+if g:mechanica_termcolors == 16
   let s:bg0[1]    = 0
   let s:fg4[1]    = 7
   let s:gray[1]   = 8
@@ -301,13 +301,13 @@ endif
 " Overload Setting: {{{
 
 let s:hls_cursor = s:orange
-if exists('g:gruvbox_hls_cursor')
-  let s:hls_cursor = get(s:gb, g:gruvbox_hls_cursor)
+if exists('g:mechanica_hls_cursor')
+  let s:hls_cursor = get(s:gb, g:mechanica_hls_cursor)
 endif
 
 let s:number_column = s:none
-if exists('g:gruvbox_number_column')
-  let s:number_column = get(s:gb, g:gruvbox_number_column)
+if exists('g:mechanica_number_column')
+  let s:number_column = get(s:gb, g:mechanica_number_column)
 endif
 
 let s:sign_column = s:bg1
@@ -318,52 +318,52 @@ if exists('g:gitgutter_override_sign_column_highlight') &&
 else
   let g:gitgutter_override_sign_column_highlight = 0
 
-  if exists('g:gruvbox_sign_column')
-    let s:sign_column = get(s:gb, g:gruvbox_sign_column)
+  if exists('g:mechanica_sign_column')
+    let s:sign_column = get(s:gb, g:mechanica_sign_column)
   endif
 endif
 
 let s:color_column = s:bg1
-if exists('g:gruvbox_color_column')
-  let s:color_column = get(s:gb, g:gruvbox_color_column)
+if exists('g:mechanica_color_column')
+  let s:color_column = get(s:gb, g:mechanica_color_column)
 endif
 
 let s:vert_split = s:bg0
-if exists('g:gruvbox_vert_split')
-  let s:vert_split = get(s:gb, g:gruvbox_vert_split)
+if exists('g:mechanica_vert_split')
+  let s:vert_split = get(s:gb, g:mechanica_vert_split)
 endif
 
 let s:invert_signs = ''
-if exists('g:gruvbox_invert_signs')
-  if g:gruvbox_invert_signs == 1
+if exists('g:mechanica_invert_signs')
+  if g:mechanica_invert_signs == 1
     let s:invert_signs = s:inverse
   endif
 endif
 
 let s:invert_selection = s:inverse
-if exists('g:gruvbox_invert_selection')
-  if g:gruvbox_invert_selection == 0
+if exists('g:mechanica_invert_selection')
+  if g:mechanica_invert_selection == 0
     let s:invert_selection = ''
   endif
 endif
 
 let s:invert_tabline = ''
-if exists('g:gruvbox_invert_tabline')
-  if g:gruvbox_invert_tabline == 1
+if exists('g:mechanica_invert_tabline')
+  if g:mechanica_invert_tabline == 1
     let s:invert_tabline = s:inverse
   endif
 endif
 
 let s:italicize_comments = s:italic
-if exists('g:gruvbox_italicize_comments')
-  if g:gruvbox_italicize_comments == 0
+if exists('g:mechanica_italicize_comments')
+  if g:mechanica_italicize_comments == 0
     let s:italicize_comments = ''
   endif
 endif
 
 let s:italicize_strings = ''
-if exists('g:gruvbox_italicize_strings')
-  if g:gruvbox_italicize_strings == 1
+if exists('g:mechanica_italicize_strings')
+  if g:mechanica_italicize_strings == 1
     let s:italicize_strings = s:italic
   endif
 endif
@@ -393,12 +393,12 @@ function! s:HL(group, fg, ...)
 
   " special fallback
   if a:0 >= 3
-    if g:gruvbox_guisp_fallback != 'NONE'
+    if g:mechanica_guisp_fallback != 'NONE'
       let fg = a:3
     endif
 
     " bg fallback mode should invert higlighting
-    if g:gruvbox_guisp_fallback == 'bg'
+    if g:mechanica_guisp_fallback == 'bg'
       let emstr .= 'inverse,'
     endif
   endif
@@ -566,7 +566,7 @@ hi! link lCursor Cursor
 " }}}
 " Syntax Highlighting: {{{
 
-if g:gruvbox_improved_strings == 0
+if g:mechanica_improved_strings == 0
   hi! link Special GruvboxOrange
 else
   call s:HL('Special', s:orange, s:bg1, s:italicize_strings)
@@ -612,7 +612,7 @@ hi! link Constant GruvboxPurple
 " Character constant: 'c', '/n'
 hi! link Character GruvboxPurple
 " String constant: "this is a string"
-if g:gruvbox_improved_strings == 0
+if g:mechanica_improved_strings == 0
   call s:HL('String',  s:green, s:none, s:italicize_strings)
 else
   call s:HL('String',  s:fg1, s:bg1, s:italicize_strings)
@@ -664,7 +664,7 @@ call s:HL('DiffText',   s:yellow, s:bg0, s:inverse)
 
 if has("spell")
   " Not capitalised word, or compile warnings
-  if g:gruvbox_improved_warnings == 0
+  if g:mechanica_improved_warnings == 0
     call s:HL('SpellCap',   s:none, s:none, s:undercurl, s:red)
   else
     call s:HL('SpellCap',   s:green, s:none, s:bold . s:italic)
@@ -699,7 +699,7 @@ if !exists('g:indent_guides_auto_colors')
 endif
 
 if g:indent_guides_auto_colors == 0
-  if g:gruvbox_invert_indent_guides == 0
+  if g:mechanica_invert_indent_guides == 0
     call s:HL('IndentGuidesOdd', s:vim_bg, s:bg2)
     call s:HL('IndentGuidesEven', s:vim_bg, s:bg1)
   else

@@ -1,12 +1,12 @@
 " -----------------------------------------------------------------------------
-" File: gruvbox.vim
-" Description: Gruvbox colorscheme for Lightline (itchyny/lightline.vim)
-" Author: gmoe <me@griffinmoe.com>
-" Source: https://github.com/morhetz/gruvbox
-" Last Modified: 20 Sep 2017
+" File: mechanica.vim
+" Description: Mechanica colorscheme for Lightline (itchyny/lightline.vim)
+" Author: alexpro <aleksandar.prokopec@gmail.com>
+" Source: https://github.com/axel22/mechanica
+" Last Modified: 20 Feb 2020
 " -----------------------------------------------------------------------------
 
-function! s:getGruvColor(group)
+function! s:getMechaColor(group)
   let guiColor = synIDattr(hlID(a:group), "fg", "gui") 
   let termColor = synIDattr(hlID(a:group), "fg", "cterm") 
   return [ guiColor, termColor ]
@@ -14,18 +14,18 @@ endfunction
 
 if exists('g:lightline')
 
-  let s:bg0  = s:getGruvColor('GruvboxBg0')
-  let s:bg1  = s:getGruvColor('GruvboxBg1')
-  let s:bg2  = s:getGruvColor('GruvboxBg2')
-  let s:bg4  = s:getGruvColor('GruvboxBg4')
-  let s:fg1  = s:getGruvColor('GruvboxFg1')
-  let s:fg4  = s:getGruvColor('GruvboxFg4')
+  let s:bg0  = s:getMechaColor('MechanicaBg0')
+  let s:bg1  = s:getMechaColor('MechanicaBg1')
+  let s:bg2  = s:getMechaColor('MechanicaBg2')
+  let s:bg4  = s:getMechaColor('MechanicaBg4')
+  let s:fg1  = s:getMechaColor('MechanicaFg1')
+  let s:fg4  = s:getMechaColor('MechanicaFg4')
 
-  let s:yellow = s:getGruvColor('GruvboxYellow')
-  let s:blue   = s:getGruvColor('GruvboxBlue')
-  let s:aqua   = s:getGruvColor('GruvboxAqua')
-  let s:orange = s:getGruvColor('GruvboxOrange')
-  let s:green = s:getGruvColor('GruvboxGreen')
+  let s:yellow = s:getMechaColor('MechanicaYellow')
+  let s:blue   = s:getMechaColor('MechanicaBlue')
+  let s:aqua   = s:getMechaColor('MechanicaAqua')
+  let s:orange = s:getMechaColor('MechanicaOrange')
+  let s:green  = s:getMechaColor('MechanicaGreen')
 
   let s:p = {'normal':{}, 'inactive':{}, 'insert':{}, 'replace':{}, 'visual':{}, 'tabline':{}, 'terminal':{}}
   let s:p.normal.left = [ [ s:bg0, s:fg4, 'bold' ], [ s:fg4, s:bg2 ] ]
@@ -53,5 +53,5 @@ if exists('g:lightline')
   let s:p.normal.error = [ [ s:bg0, s:orange ] ]
   let s:p.normal.warning = [ [ s:bg2, s:yellow ] ]
 
-  let g:lightline#colorscheme#gruvbox#palette = lightline#colorscheme#flatten(s:p)
+  let g:lightline#colorscheme#mechanica#palette = lightline#colorscheme#flatten(s:p)
 endif

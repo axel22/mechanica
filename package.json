@@ -1,0 +1,10 @@
+{
+  "name": "mechanica",
+  "version": "1.0.0",
+  "repository": "git@github.com:axel22/mechanica.git",
+  "author": "Aleksandar Prokopec <aleksandar.prokopec@gmail.com>",
+  "license": "MIT",
+  "vim": {
+    "opt": true
+  }
+}

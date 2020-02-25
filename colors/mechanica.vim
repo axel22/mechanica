@@ -1079,7 +1079,7 @@ hi! link javascriptDefault MechanicaAqua
 
 hi! link javascriptClassName MechanicaYellow
 hi! link javascriptClassSuperName MechanicaYellow
-hi! link javascriptGlobal MechanicaYellow
+hi! link javascriptGlobal Normal
 
 hi! link javascriptEndColons MechanicaFg1
 hi! link javascriptFuncArg MechanicaFg1

@@ -1255,7 +1255,7 @@ hi! link moonObject MechanicaYellow
 " }}}
 " Java: {{{
 
-hi! link javaAnnotation MechanicaBlue
+hi! link javaAnnotation MechanicaRed
 hi! link javaDocTags MechanicaAqua
 hi! link javaCommentTitle vimCommentTitle
 hi! link javaParen MechanicaFg3

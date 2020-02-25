@@ -118,9 +118,9 @@ let s:gb.bright_orange  = ['#fe8019', 208]     " 254-128-25
 let s:gb.neutral_red    = ['#cc241d', 124]     " 204-36-29
 let s:gb.neutral_green  = ['#98971a', 106]     " 152-151-26
 let s:gb.neutral_yellow = ['#d79921', 172]     " 215-153-33
-let s:gb.neutral_blue   = ['#458588', 66]      " 69-133-136
+let s:gb.neutral_blue   = ['#458588', 166]      " 69-133-136
 let s:gb.neutral_purple = ['#b16286', 132]     " 177-98-134
-let s:gb.neutral_aqua   = ['#689d6a', 72]      " 104-157-106
+let s:gb.neutral_aqua   = ['#689d6a', 172]      " 104-157-106
 let s:gb.neutral_orange = ['#d65d0e', 166]     " 214-93-14
 
 let s:gb.faded_red      = ['#9d0006', 88]      " 157-0-6

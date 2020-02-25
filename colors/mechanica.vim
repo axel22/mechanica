@@ -1101,7 +1101,7 @@ hi! link javascriptBOMLocationMethod MechanicaFg1
 hi! link javascriptBOMWindowMethod MechanicaFg1
 hi! link javascriptStringMethod MechanicaFg1
 
-hi! link javascriptVariable Normal
+hi! link javascriptVariable MechanicaBlue
 " hi! link javascriptVariable MechanicaRed
 " hi! link javascriptIdentifier MechanicaOrange
 " hi! link javascriptClassSuper MechanicaOrange

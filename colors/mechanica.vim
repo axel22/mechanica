@@ -1071,10 +1071,10 @@ hi! link javaScriptParens MechanicaFg3
 " }}}
 " YAJS: {{{
 
-hi! link javascriptImport MechanicaAqua
-hi! link javascriptExport MechanicaAqua
-hi! link javascriptClassKeyword MechanicaAqua
-hi! link javascriptClassExtends MechanicaAqua
+hi! link javascriptImport MechanicaBlue
+hi! link javascriptExport MechanicaBlue
+hi! link javascriptClassKeyword MechanicaBlue
+hi! link javascriptClassExtends MechanicaBlue
 hi! link javascriptDefault MechanicaAqua
 
 hi! link javascriptClassName MechanicaYellow

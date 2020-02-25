@@ -594,7 +594,7 @@ hi! link Keyword MechanicaBlue
 " Variable name
 hi! link Identifier MechanicaAqua
 " Function name
-hi! link Function MechanicaGreenBold
+hi! link Function MechanicaYellow
 
 " Generic preprocessor
 hi! link PreProc MechanicaAqua
@@ -908,12 +908,12 @@ hi! link diffLine MechanicaBlue
 hi! link htmlTag MechanicaBlue
 hi! link htmlEndTag MechanicaBlue
 
-hi! link htmlTagName MechanicaAquaBold
+hi! link htmlTagName MechanicaAqua
 hi! link htmlArg MechanicaAqua
 
 hi! link htmlScriptTag MechanicaPurple
 hi! link htmlTagN MechanicaFg1
-hi! link htmlSpecialTagName MechanicaAquaBold
+hi! link htmlSpecialTagName MechanicaAqua
 
 call s:HL('htmlLink', s:fg4, s:none, s:underline)
 
@@ -1020,7 +1020,7 @@ hi! link pythonBoolean MechanicaPurple
 hi! link pythonDot MechanicaFg3
 hi! link pythonConditional MechanicaRed
 hi! link pythonRepeat MechanicaRed
-hi! link pythonDottedName MechanicaGreenBold
+hi! link pythonDottedName MechanicaGreen
 
 " }}}
 " CSS: {{{

@@ -908,12 +908,12 @@ hi! link diffLine MechanicaBlue
 hi! link htmlTag MechanicaBlue
 hi! link htmlEndTag MechanicaBlue
 
-hi! link htmlTagName MechanicaAqua
-hi! link htmlArg MechanicaAqua
+hi! link htmlTagName MechanicaBlue
+hi! link htmlArg MechanicaBlue
 
 hi! link htmlScriptTag MechanicaPurple
 hi! link htmlTagN MechanicaFg1
-hi! link htmlSpecialTagName MechanicaPurple
+hi! link htmlSpecialTagName MechanicaBlue
 
 call s:HL('htmlLink', s:fg4, s:none, s:underline)
 

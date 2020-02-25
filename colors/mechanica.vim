@@ -1293,11 +1293,11 @@ hi! link scalaKeywordModifier MechanicaBlue
 hi! link scalaSpecial MechanicaAqua
 hi! link scalaOperator MechanicaFg1
 
-hi! link scalaTypeDeclaration MechanicaYellow
-hi! link scalaTypeTypePostDeclaration MechanicaYellow
+hi! link scalaTypeDeclaration MechanicaBlue
+hi! link scalaTypeTypePostDeclaration MechanicaBlue
 
 hi! link scalaInstanceDeclaration MechanicaFg1
-hi! link scalaInterpolation MechanicaAqua
+hi! link scalaInterpolation MechanicaOrange
 
 " }}}
 " Markdown: {{{

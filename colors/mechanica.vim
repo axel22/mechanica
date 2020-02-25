@@ -592,14 +592,14 @@ hi! link Operator Normal
 hi! link Keyword MechanicaBlue
 
 " Variable name
-hi! link Identifier MechanicaAqua
+hi! link Identifier Normal
 " Function name
 hi! link Function MechanicaYellow
 
 " Generic preprocessor
 hi! link PreProc MechanicaAqua
 " Preprocessor #include
-hi! link Include MechanicaAqua
+hi! link Include MechanicaBlue
 " Preprocessor #define
 hi! link Define MechanicaAqua
 " Same as Define
@@ -629,9 +629,9 @@ hi! link Type MechanicaGreen
 " static, register, volatile, etc
 hi! link StorageClass MechanicaBlue
 " struct, union, enum, etc.
-hi! link Structure MechanicaAqua
+hi! link Structure MechanicaBlue
 " typedef
-hi! link Typedef MechanicaYellow
+hi! link Typedef MechanicaBlue
 
 " }}}
 " Completion Menu: {{{
@@ -749,7 +749,7 @@ let g:niji_light_colours = g:rbpt_colorpairs
 " GitGutter: {{{
 
 hi! link GitGutterAdd MechanicaGreenSign
-hi! link GitGutterChange MechanicaAquaSign
+hi! link GitGutterChange MechanicaYellowSign
 hi! link GitGutterDelete MechanicaRedSign
 hi! link GitGutterChangeDelete MechanicaAquaSign
 
@@ -999,7 +999,7 @@ hi! link clojureUnquote MechanicaYellow
 " C: {{{
 
 hi! link cOperator MechanicaPurple
-hi! link cStructure MechanicaOrange
+hi! link cStructure MechanicaGreen
 
 " }}}
 " Python: {{{
@@ -1101,11 +1101,11 @@ hi! link javascriptBOMLocationMethod MechanicaFg1
 hi! link javascriptBOMWindowMethod MechanicaFg1
 hi! link javascriptStringMethod MechanicaFg1
 
-hi! link javascriptVariable MechanicaOrange
+hi! link javascriptVariable Normal
 " hi! link javascriptVariable MechanicaRed
 " hi! link javascriptIdentifier MechanicaOrange
 " hi! link javascriptClassSuper MechanicaOrange
-hi! link javascriptIdentifier MechanicaOrange
+hi! link javascriptIdentifier Normal
 hi! link javascriptClassSuper MechanicaOrange
 
 " hi! link javascriptFuncKeyword MechanicaOrange
@@ -1264,7 +1264,7 @@ hi! link javaParen2 MechanicaFg3
 hi! link javaParen3 MechanicaFg3
 hi! link javaParen4 MechanicaFg3
 hi! link javaParen5 MechanicaFg3
-hi! link javaOperator MechanicaOrange
+hi! link javaOperator Normal
 
 hi! link javaVarArg MechanicaGreen
 
@@ -1287,8 +1287,8 @@ hi! link scalaCaseFollowing MechanicaFg1
 hi! link scalaCapitalWord MechanicaFg1
 hi! link scalaTypeExtension MechanicaFg1
 
-hi! link scalaKeyword MechanicaRed
-hi! link scalaKeywordModifier MechanicaRed
+hi! link scalaKeyword MechanicaBlue
+hi! link scalaKeywordModifier MechanicaBlue
 
 hi! link scalaSpecial MechanicaAqua
 hi! link scalaOperator MechanicaFg1

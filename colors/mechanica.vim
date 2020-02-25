@@ -913,7 +913,7 @@ hi! link htmlArg MechanicaAqua
 
 hi! link htmlScriptTag MechanicaPurple
 hi! link htmlTagN MechanicaFg1
-hi! link htmlSpecialTagName MechanicaAqua
+hi! link htmlSpecialTagName MechanicaPurple
 
 call s:HL('htmlLink', s:fg4, s:none, s:underline)
 

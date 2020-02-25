@@ -1061,8 +1061,8 @@ hi! link cssGeneratedContentProp MechanicaAqua
 " JavaScript: {{{
 
 hi! link javaScriptBraces MechanicaFg1
-hi! link javaScriptFunction MechanicaAqua
-hi! link javaScriptIdentifier MechanicaRed
+hi! link javaScriptFunction MechanicaBlue
+hi! link javaScriptIdentifier MechanicaBlue
 hi! link javaScriptMember MechanicaBlue
 hi! link javaScriptNumber MechanicaPurple
 hi! link javaScriptNull MechanicaPurple

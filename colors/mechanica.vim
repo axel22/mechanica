@@ -1025,7 +1025,7 @@ hi! link pythonDottedName MechanicaGreen
 " }}}
 " CSS: {{{
 
-hi! link cssBraces MechanicaBlue
+hi! link cssBraces Normal
 hi! link cssFunctionName MechanicaYellow
 hi! link cssIdentifier MechanicaOrange
 hi! link cssClassName MechanicaGreen

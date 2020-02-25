@@ -108,7 +108,7 @@ let s:gb.light4      = ['#a89984', 246]     " 168-153-132
 let s:gb.light4_256  = ['#a89984', 246]     " 168-153-132
 
 let s:gb.bright_red     = ['#fb4934', 167]     " 251-73-52
-let s:gb.bright_green   = ['#b8bb26', 142]     " 184-187-38
+let s:gb.bright_green   = ['#30ab30', 142]
 let s:gb.bright_yellow  = ['#ffcb3d', 214]
 let s:gb.bright_blue    = ['#1ea0d4', 74]
 let s:gb.bright_purple  = ['#d3869b', 175]     " 211-134-155
@@ -577,22 +577,22 @@ call s:HL('Todo', s:vim_fg, s:vim_bg, s:bold . s:italic)
 call s:HL('Error', s:red, s:vim_bg, s:bold . s:inverse)
 
 " Generic statement
-hi! link Statement MechanicaRed
+hi! link Statement MechanicaBlue
 " if, then, else, endif, swicth, etc.
-hi! link Conditional MechanicaRed
+hi! link Conditional MechanicaBlue
 " for, do, while, etc.
-hi! link Repeat MechanicaRed
+hi! link Repeat MechanicaBlue
 " case, default, etc.
-hi! link Label MechanicaRed
+hi! link Label MechanicaBlue
 " try, catch, throw
-hi! link Exception MechanicaRed
+hi! link Exception MechanicaBlue
 " sizeof, "+", "*", etc.
 hi! link Operator Normal
 " Any other keyword
-hi! link Keyword MechanicaRed
+hi! link Keyword MechanicaBlue
 
 " Variable name
-hi! link Identifier MechanicaBlue
+hi! link Identifier MechanicaAqua
 " Function name
 hi! link Function MechanicaGreenBold
 
@@ -613,7 +613,7 @@ hi! link Constant MechanicaPurple
 hi! link Character MechanicaPurple
 " String constant: "this is a string"
 if g:mechanica_improved_strings == 0
-  call s:HL('String',  s:green, s:none, s:italicize_strings)
+  call s:HL('String',  s:orange, s:none, s:italicize_strings)
 else
   call s:HL('String',  s:fg1, s:bg1, s:italicize_strings)
 endif
@@ -625,9 +625,9 @@ hi! link Number MechanicaPurple
 hi! link Float MechanicaPurple
 
 " Generic type
-hi! link Type MechanicaYellow
+hi! link Type MechanicaGreen
 " static, register, volatile, etc
-hi! link StorageClass MechanicaOrange
+hi! link StorageClass MechanicaBlue
 " struct, union, enum, etc.
 hi! link Structure MechanicaAqua
 " typedef

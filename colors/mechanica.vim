@@ -1114,7 +1114,7 @@ hi! link javascriptFuncKeyword MechanicaAqua
 hi! link javascriptAsyncFunc MechanicaAqua
 hi! link javascriptClassStatic MechanicaOrange
 
-hi! link javascriptOperator Normal
+hi! link javascriptOperator MechanicaBlue
 hi! link javascriptForOperator MechanicaBlue
 hi! link javascriptYield MechanicaBlue
 hi! link javascriptExceptions MechanicaRed
@@ -1264,7 +1264,7 @@ hi! link javaParen2 MechanicaFg3
 hi! link javaParen3 MechanicaFg3
 hi! link javaParen4 MechanicaFg3
 hi! link javaParen5 MechanicaFg3
-hi! link javaOperator Normal
+hi! link javaOperator MechanicaBlue
 
 hi! link javaVarArg MechanicaGreen
 

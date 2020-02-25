@@ -1013,13 +1013,13 @@ hi! link pythonInclude MechanicaBlue
 hi! link pythonImport MechanicaBlue
 hi! link pythonRun MechanicaBlue
 hi! link pythonCoding MechanicaBlue
-hi! link pythonOperator MechanicaRed
+hi! link pythonOperator MechanicaBlue
 hi! link pythonException MechanicaRed
 hi! link pythonExceptions MechanicaPurple
 hi! link pythonBoolean MechanicaPurple
 hi! link pythonDot MechanicaFg3
-hi! link pythonConditional MechanicaRed
-hi! link pythonRepeat MechanicaRed
+hi! link pythonConditional MechanicaBlue
+hi! link pythonRepeat MechanicaBlue
 hi! link pythonDottedName MechanicaGreen
 
 " }}}
@@ -1114,9 +1114,9 @@ hi! link javascriptFuncKeyword MechanicaAqua
 hi! link javascriptAsyncFunc MechanicaAqua
 hi! link javascriptClassStatic MechanicaOrange
 
-hi! link javascriptOperator MechanicaRed
-hi! link javascriptForOperator MechanicaRed
-hi! link javascriptYield MechanicaRed
+hi! link javascriptOperator Normal
+hi! link javascriptForOperator MechanicaBlue
+hi! link javascriptYield MechanicaBlue
 hi! link javascriptExceptions MechanicaRed
 hi! link javascriptMessage MechanicaRed
 
@@ -1146,8 +1146,8 @@ hi! link javascriptDOMNodeMethod MechanicaFg1
 hi! link javascriptDOMStorageMethod MechanicaFg1
 hi! link javascriptHeadersMethod MechanicaFg1
 
-hi! link javascriptAsyncFuncKeyword MechanicaRed
-hi! link javascriptAwaitFuncKeyword MechanicaRed
+hi! link javascriptAsyncFuncKeyword MechanicaBlue
+hi! link javascriptAwaitFuncKeyword MechanicaBlue
 
 " }}}
 " PanglossJS: {{{

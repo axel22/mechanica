@@ -1029,9 +1029,9 @@ hi! link cssBraces Normal
 hi! link cssFunctionName MechanicaYellow
 hi! link cssIdentifier MechanicaOrange
 hi! link cssClassName MechanicaGreen
-hi! link cssColor MechanicaBlue
-hi! link cssSelectorOp MechanicaBlue
-hi! link cssSelectorOp2 MechanicaBlue
+hi! link cssColor MechanicaPurple
+hi! link cssSelectorOp MechanicaGreen
+hi! link cssSelectorOp2 MechanicaGreen
 hi! link cssImportant MechanicaGreen
 hi! link cssVendor MechanicaFg1
 

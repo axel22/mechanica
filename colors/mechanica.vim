@@ -1037,11 +1037,11 @@ hi! link cssVendor MechanicaFg1
 
 hi! link cssTextProp MechanicaAqua
 hi! link cssAnimationProp MechanicaAqua
-hi! link cssUIProp MechanicaYellow
+hi! link cssUIProp MechanicaAqua
 hi! link cssTransformProp MechanicaAqua
 hi! link cssTransitionProp MechanicaAqua
 hi! link cssPrintProp MechanicaAqua
-hi! link cssPositioningProp MechanicaYellow
+hi! link cssPositioningProp MechanicaAqua
 hi! link cssBoxProp MechanicaAqua
 hi! link cssFontDescriptorProp MechanicaAqua
 hi! link cssFlexibleBoxProp MechanicaAqua

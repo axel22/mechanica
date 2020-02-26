@@ -1101,7 +1101,7 @@ hi! link javascriptBOMLocationMethod MechanicaFg1
 hi! link javascriptBOMWindowMethod MechanicaFg1
 hi! link javascriptStringMethod MechanicaFg1
 
-hi! link javascriptVariable MechanicaBlue
+hi! link javascriptVariable Normal
 " hi! link javascriptVariable MechanicaRed
 " hi! link javascriptIdentifier MechanicaOrange
 " hi! link javascriptClassSuper MechanicaOrange
@@ -1125,7 +1125,7 @@ hi! link javascriptTemplateSubstitution MechanicaFg1
 
 " hi! link javascriptLabel MechanicaBlue
 " hi! link javascriptObjectLabel MechanicaBlue
-" hi! link javascriptPropertyName MechanicaBlue
+hi! link javascriptPropertyName Normal
 hi! link javascriptLabel MechanicaFg1
 hi! link javascriptObjectLabel MechanicaFg1
 hi! link javascriptPropertyName MechanicaFg1

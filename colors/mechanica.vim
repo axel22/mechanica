@@ -909,9 +909,9 @@ hi! link htmlTag MechanicaBlue
 hi! link htmlEndTag MechanicaBlue
 
 hi! link htmlTagName MechanicaBlue
-hi! link htmlArg MechanicaBlue
+hi! link htmlArg Normal
 
-hi! link htmlScriptTag MechanicaPurple
+hi! link htmlScriptTag MechanicaBlue
 hi! link htmlTagN MechanicaFg1
 hi! link htmlSpecialTagName MechanicaBlue
 
